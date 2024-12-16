@@ -10,10 +10,12 @@ OOP Techniques Used:
 - Composition: Combined classes like `Palette`, `Controller`, `Model2dArray`, and `GameView` to create a modular and maintainable codebase.
 
 Design Patterns Used:
-Strategy Pattern: `ModelInterface` allows the game to interact with different model implementations (e.g., `Model2dArray`, `ModelSet`), enabling easy model switching.
-Observer Pattern: The `Controller` observes user inputs and updates the game state, notifying the `GameView` to update the UI.
-State Pattern: The `SpriteState` enum defines game piece states (e.g., `IN_PALETTE`, `IN_PLAY`, `PLACED`), changing behavior based on state.
-Singleton Pattern: `RegionHelper` is a singleton to manage grid regions, ensuring only one instance is used for consistency and memory efficiency.
+-Strategy Pattern: `ModelInterface` allows the game to interact with different model implementations (e.g., `Model2dArray`, `ModelSet`), enabling easy model switching.
+--`Model2dArray` uses 2D arrays to implement the game logic.
+--`ModelSet` uses Sets to implement the game logic.
+-Observer Pattern: The `Controller` observes user inputs and updates the game state, notifying the `GameView` to update the UI.
+-State Pattern: The `SpriteState` enum defines game piece states (e.g., `IN_PALETTE`, `IN_PLAY`, `PLACED`), changing behavior based on state.
+-Singleton Pattern: `RegionHelper` is a singleton to manage grid regions, ensuring only one instance is used for consistency and memory efficiency.
 
 MVC Design Pattern:
 - Model: Handles game state and logic (e.g., `Model2dArray`,`ModelSaet`).
