@@ -7,7 +7,6 @@ OOP Techniques Used:
 - Abstraction: Created `ModelInterface` to define core methods, allowing interchangeable grid models without affecting game logic.
 - Encapsulation: Private attributes (e.g., grid, piece states) with getter/setter methods ensure data integrity and reduce dependencies.
 - Polymorphism: Different classes like `Model2dArray` and `ModelSet` implement `ModelInterface`, enabling flexible interaction and easy extension of the game model.
-- Composition: Combined classes like `Palette`, `Controller`, `Model2dArray`, and `GameView` to create a modular and maintainable codebase.
 
 Design Patterns Used:
 - Observer Pattern: The `Controller` observes user inputs and updates the game state, notifying the `GameView` to update the UI.
